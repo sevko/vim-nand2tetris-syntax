@@ -3,6 +3,10 @@
 " Maintainer: Severyn Kozak
 " Latest Revision: 11 November 2014
 
+if version < 600
+	syntax clear
+endif
+
 " The `.hdl` extension is reserved for the `vhdl` filetype, and, by the time
 " this plugin is sourced, Vim has already loaded the `vhdl` ftplugin files,
 " which contain some undesired settings. The fullproof way to ignore them is to
