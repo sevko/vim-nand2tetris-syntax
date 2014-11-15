@@ -1,3 +1,8 @@
+" Vim syntax file
+" Language: Hack
+" Maintainer: Severyn Kozak
+" Latest Revision: 15 November 2014
+
 setl iskeyword+=.,$,:
 
 syn keyword hackDestination A M D AM MD AD AMD null
