@@ -1,3 +1,12 @@
+" Vim syntax file
+" Language: Hack Virtual Machine
+" Maintainer: Severyn Kozak
+" Latest Revision: 02 December 2014
+
+if version < 600
+	syntax clear
+endif
+
 setl iskeyword+=.,:
 
 syn keyword hackVmMathLogicOp add sub neg eq gt lt or not
