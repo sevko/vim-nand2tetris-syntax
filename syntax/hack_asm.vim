@@ -1,28 +1,32 @@
 " Vim syntax file
-" Language: Hack
+" Language: Hack Assembly
 " Maintainer: Severyn Kozak
 " Latest Revision: 15 November 2014
 
+if version < 600
+	syntax clear
+endif
+
 setl iskeyword+=.,$,:
 
-syn keyword hackDestination A M D AM MD AD AMD null
-syn keyword hackJump JGT JEQ JGE JLT JNE JLE JMP
+syn keyword hackAsmDestination A M D AM MD AD AMD null
+syn keyword hackAsmJump JGT JEQ JGE JLT JNE JLE JMP
 
-syn match hackComment "\/\/.*$"
-syn match hackLabel "(\k\+)"
-syn match hackMathOp "[+-]"
-syn match hackBitwiseOp "[&|]"
-syn match hackAInstruction "@\k\+"
-syn match hackCInstruction "[=;]"
-syn match hackConstant "-1\|0\|1"
+syn match hackAsmComment "\/\/.*$"
+syn match hackAsmLabel "(\k\+)"
+syn match hackAsmMathOp "[+-]"
+syn match hackAsmBitwiseOp "[&|]"
+syn match hackAsmAInstruction "@\k\+"
+syn match hackAsmCInstruction "[=;]"
+syn match hackAsmConstant "-1\|0\|1"
 
-hi link hackDestination Identifier
-hi link hackJump Function
-hi link hackConstant Constant
+hi link hackAsmDestination Identifier
+hi link hackAsmJump Function
+hi link hackAsmConstant Constant
 
-hi link hackComment Comment
-hi link hackLabel Label
-hi link hackMathOp Operator
-hi link hackBitwiseOp Operator
-hi link hackAInstruction PreProc
-hi link hackCInstruction Operator
+hi link hackAsmComment Comment
+hi link hackAsmLabel Label
+hi link hackAsmMathOp Operator
+hi link hackAsmBitwiseOp Operator
+hi link hackAsmAInstruction PreProc
+hi link hackAsmCInstruction Operator

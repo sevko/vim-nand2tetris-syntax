@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.asm set filetype=hack
+autocmd BufNewFile,BufRead *.asm set filetype=hack_asm
