@@ -8,6 +8,7 @@ if version < 600
 endif
 
 setl iskeyword+=.,:
+setl iskeyword+=-
 
 syn keyword hackVmMathLogicOp add sub neg eq gt lt or not
 syn keyword hackVmMemoryOp push pop
