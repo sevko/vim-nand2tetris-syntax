@@ -16,3 +16,5 @@ git clone https://github.com/sevko/vim-nand2tetris-syntax
 ```
 
 Adapt as needed for your plugin manager of choice.
+
+![hdl](readme_docs/hdl.png)
