@@ -29,10 +29,10 @@ syn match _hdl_number "\v(\w)@<!\d+"
 syn match _hdl_surrounding "[[\](){}]"
 syn match _hdl_pin_name "\a[a-zA-Z0-9]*\ze=" contains=ALL
 syn region _hdl_comment_block start="/\*" end="*/"
-syn keyword _hdl_builtin_chip Add16 ALU And And16 ARegister Bit DFF DMux
+syn keyword _hdl_builtin_chip Add16 ALU And And16 ARegister Bit CPU DFF DMux
 	\ DMux4Way DMux8Way DRegister Mux4Way16 Mux8Way16 FullAdder HalfAdder Inc16
-	\ Keyboard Mux Mux16 Or Or16 Or8Way PC RAM RAM16K RAM4K RAM512 RAM64 ROM32K
-	\ Screen Xor RAM8 Register RegisterWithGUI Nand Not Not16
+	\ Keyboard Memory Mux Mux16 Or Or16 Or8Way PC RAM RAM16K RAM4K RAM512 RAM64
+	\ ROM32K Screen Xor RAM8 Register RegisterWithGUI Nand Not Not16
 syn keyword _hdl_section CHIP PARTS IN OUT
 
 syn keyword _hdl_constant true false
